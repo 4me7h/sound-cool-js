@@ -55,6 +55,9 @@
 	</div>
 </div>
 
+<input type="text" size="40" onkeypress="myFunction(event)">
+<div id="code"></div>
+
 <audio data-key="65" src="sounds/clap.wav"></audio>
 <audio data-key="83" src="sounds/hitat.wav"></audio>
 <audio data-key="68" src="sounds/kick.wav"></audio>
@@ -66,9 +69,19 @@
 <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
-	window.addEventListener('keydown', function(e) {
-		const audio = document.querySelector('audio[data-key="$(e.keycode)"]');
-	});
+
+	function myFunction(event) {
+		var code = event.keyCode;
+		document.querySelector('#code').innerHTML = `the code is ${code}`;
+		var x=event.keyCode;
+		if(x==65) {
+			alert("fuck!!");
+		}
+	}
+	
+	// window.addEventListener('keydown', function(e) {
+	// 	const audio = document.querySelector('audio[data-key="$(e.keycode)"]');
+	// });
 </script>
 
 
