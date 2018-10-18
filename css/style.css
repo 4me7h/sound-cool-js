@@ -1,6 +1,8 @@
+
+
 html {
   font-size: 10px;
-  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+  background-color: #34495e;
   background-size: cover;
 }
 
@@ -10,10 +12,22 @@ body,html {
   font-family: sans-serif;
 }
 
+.container-title {
+  display: flex;
+  flex: 1;
+  min-block-size: 20vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: #ecf0f1;
+}
+
 .keys {
   display: flex;
   flex: 1;
-  min-height: 100vh;
+  min-height: 60vh;
   align-items: center;
   justify-content: center;
 }
@@ -27,15 +41,15 @@ body,html {
   transition: all .07s ease;
   width: 10rem;
   text-align: center;
-  color: white;
+  color: #ecf0f1;
   background: rgba(0,0,0,0.4);
   text-shadow: 0 0 .5rem black;
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: #f1c40f;
+  box-shadow: 0 0 1rem #f1c40f;
 }
 
 kbd {
@@ -47,5 +61,5 @@ kbd {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #ffc600;
+  color: #f1c40f;
 }
