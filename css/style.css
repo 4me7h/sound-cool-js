@@ -1,8 +1,5 @@
-
-
 html {
-  font-size: 10px;
-  background-color: #34495e;
+  background-color: #1B1464;
   background-size: cover;
 }
 
@@ -22,27 +19,30 @@ body,html {
 
 .title {
   color: #ecf0f1;
+  font-size: 2rem;
 }
 
 .keys {
   display: flex;
-  flex: 1;
+  flex-wrap: wrap;
+  width: 500px;
+  margin: 0 auto;
   min-height: 60vh;
   align-items: center;
   justify-content: center;
 }
 
 .key {
-  border: .4rem solid black;
+  border: .4rem solid #12CBC4;
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
   padding: 1rem .5rem;
   transition: all .07s ease;
-  width: 10rem;
+  width: 15%;
   text-align: center;
   color: #ecf0f1;
-  background: rgba(0,0,0,0.4);
+  background: #006266;
   text-shadow: 0 0 .5rem black;
 }
 
@@ -58,8 +58,8 @@ kbd {
 }
 
 .sound {
-  font-size: 1.2rem;
+  font-size: .8rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #f1c40f;
+  color: #FFC312;
 }
